@@ -34,8 +34,8 @@
 
     .header {
         display: flex;
+        align-items: center; /* center vertically*/
         justify-content: space-between;
-        align-items: center;
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
@@ -87,6 +87,7 @@
     .navigation a {
         color: white;
         font-size: 16px;
+        text-decoration: none;
     }
 
     .main-content {
@@ -107,8 +108,8 @@
 
 
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: center; /*center vertically*/
+        justify-content: center; /*center horizontally*/
         width: 100%;
         box-sizing: border-box;
         
