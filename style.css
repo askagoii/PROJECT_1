@@ -21,10 +21,10 @@
     }
 
     body {
-        background-image: url('images/background_393x852.png');
+        /* background-image: url('images/background_393x852.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center; */
         min-height: 100vh;
         margin: 0;
         padding: 0;
@@ -40,6 +40,9 @@
         padding: 10px;
         box-sizing: border-box;
         position: relative;
+
+        height: 100px;
+        background-color: rgb(11, 182, 182);
     }
 
     .logo {
@@ -61,6 +64,7 @@
 
     .menu-toggle {
         display: block;
+        color: black;
     }
 
     .navigation {
@@ -96,7 +100,17 @@
 
     footer {
         margin-top: auto;
-        padding: 10px;
-        color: white;
+        /* padding: 10px; */
+        color: rgb(0, 0, 0);
+        height: 100px;
+        background-color: rgb(11, 182, 182);
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        
     }
 }
