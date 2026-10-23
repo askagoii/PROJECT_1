@@ -1,0 +1,104 @@
+
+.men-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.navi {
+    display: flex;
+    gap: 25px;
+}
+
+@media screen and (max-width: 600px) {
+
+    html {
+        min-height: 100%;
+    }
+
+    body {
+        min-height: 100vh;
+        /* margin: 0;
+        padding: 0; */
+        flex-direction: column;
+        display: flex;
+    }
+
+
+
+    /*HEADER SECTION*/
+    .header-c {
+        display: flex;
+        justify-content: space-between; /*puts the logo&text and nav-var into right and left edge*/
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box; 
+        position: relative;
+
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .logo-c {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logo-c img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .men-toggle {
+        display: block;
+        color: black;
+        position: relative;
+        z-index: 1002;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navi {
+        display: none;
+        gap: 25px;
+        flex-direction: column;
+
+        position: fixed;
+        top: 80px;
+        right: 0;
+
+        width: 40%;
+        height: 100vh;
+
+        background-image: url('contact-imgs/b1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        background-color: black;
+
+        /* background-color: rgb(232, 162, 64); */
+        padding: 100px 25px 25px;
+        box-sizing: border-box;
+
+        z-index: 1001;
+        
+    }
+    .navi.active {
+        display: flex;
+    }
+    .navi a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: 800px;
+        font-size: 20px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+
+}
