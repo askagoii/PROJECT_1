@@ -21,11 +21,11 @@
     }
 
     body {
-        background-image: url('main-images/overall-background.png');
+        /* background-image: url('main-images/overall-background.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
-        
+        background-position: center; */
+        background-color: #DCE5E8;
         min-height: 100vh;
         margin: 0;
         padding: 0;
@@ -64,6 +64,10 @@
         color: rgb(0, 0, 0);
     }
 
+    .logo-font {
+        font-family: 'Playfair Display', serif;
+    }
+
     .menu-toggle {
         display: block;
         color: black;
@@ -97,20 +101,10 @@
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
         box-sizing: border-box;
-        
-     
     }
     /* main1 */
     .main-texts {
         width: 100%;
-        /* min-height: 300px; */
-
-        /* background: rgba(11, 182, 182, 0.217); */
-        /* background-image: url('main-images/back.jpeg');
-        background-repeat: no-repeat;
-        background-position: center; */
-
-
         display: flex;
         justify-content: center;
         flex-direction: column; /* Put elements vertically */
@@ -144,23 +138,18 @@
     .main-btn {
         width: 120px;
         height: 40px;
-        background-color: #ffffff;
+        background-color: rgb(229, 158, 66);
         border-radius: 10px;
         color: black;
-
+        font-weight: 700;
     }
-    /* .puppy-slider {
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-        margin: 20px auto;
-    } */
-
+    .small-info-font {
+        font-family: "Arizonia", cursive;
+        font-size: 30px;
+    }
     .row-images {
         display: flex;
         align-items: center;
-        /* flex-direction: row; */
-        /* gap: 20px;    */
         flex-direction: column;
         overflow-x: auto;
         scroll-behavior: smooth;
@@ -182,8 +171,41 @@
         display: flex;
         align-items: center;
     }
+    
+    .banner-gif img{
+        height: 180px;
+        width: 385px;
+        object-fit: cover;
+        display: block; /*fits fully*/
+        overflow: hidden;
+    }
+    .gif-text {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        color: white;
+        z-index: 2;
+        text-shadow: 2px 2px 5px black;
+    }
+    .gif-text p4 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    /* .NAT-text {
+        font-family: "Ballet", cursive;
+    } */
+
+    
+    
+    
+
+
     /* COLLECTION PHOTOS */
-    .collection-imgs {
+    /* .collection-imgs {
         display: grid;
         align-items: center;
         justify-content: center;
@@ -196,83 +218,9 @@
         height: 180px;
         object-fit: cover;
         border-radius: 8px;
-    }
+    } */
 
-
-    /* Left and right buttons */
-    .scroll-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-
-        width: 30px;
-        height: 30px;
-        border: none;
-        border-radius: 50%;
-
-        background-color: white;
-        color: #0BB6B6;
-        font-size: 16px;
-        cursor: pointer;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Button positions */
-    .left-btn {
-        left: 0;
-    }
-
-    .right-btn {
-        right: 0;
-    }
-
-    /* Hover effect */
-    .scroll-btn:hover {
-        background-color: #0BB6B6;
-        color: white;
-    }
-
-
-
-
-
-
-
-    /* main2 */
-    .main-texts-1 {
-
-        width: 100%;
-        min-height: 600px;
-
-        background: rgba(11, 182, 182, 0.217);
-        backdrop-filter: blur(3px);
-        -webkit-backdrop-filter: blur(3px);
-        box-sizing: border-box;
-
-        display: flex;
-        justify-content: center;
-        flex-direction: column; /* Put elements vertically */
-        align-items: center;    /* Center horizontally */
-        gap: 20px;
-        border-radius: 30px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-        text-align: center;
-    }
-    .main-texts-1 h3 {
-        justify-content: center;
-        color: rgb(75, 49, 26);
-        font-size: 30px;
-        text-shadow: 2px 2px 8px rgb(255, 255, 255);
-    }
-    .main-texts-1 p3 {
-        color: rgb(75, 49, 26);
-    }
-    .main-texts-1 img {
-        width: 350px;
-        height: 250px;
-    }
-
+    
 /* FOOTER PART */
     footer {
         margin-top: auto;
