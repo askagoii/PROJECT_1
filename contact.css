@@ -25,6 +25,11 @@
         padding: 0; */
         flex-direction: column;
         display: flex;
+
+        background-image: url('contact-imgs/aaasdadsdda.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
@@ -40,7 +45,11 @@
         position: relative;
 
         height: 100px;
-        background-color: rgb(255, 255, 255);
+        /* background-color: rgb(255, 255, 255); */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(3px);
+        box-sizing: border-box;
+        
     }
 
     .logo-c {
@@ -112,9 +121,70 @@
         justify-content: center;
         flex-direction: column; /*puts vertically*/
         align-items: center;
-        padding: 0;
+        padding: 10px;
         margin: 0;
+
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        box-sizing: border-box;
     }
+            /* 1st Section */
+    .contact {
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        /* justify-content: center; */
+
+        height: 400px;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        box-sizing: border-box;
+        
+    }
+    .contact img {
+        width: 40px;
+        height: 40px;
+    }
+    .contact p {
+        display: flex;
+        align-items: center;
+        /* flex-direction: column; */
+        gap: 10px;
+
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        font-size: 16px;
+        font-family: "IBM Plex Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .contact a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .contact-h {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 40px;
+        font-family: "Charmonman", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .contact h5 {
+        margin-top: 0;
+        font-size: 15px;
+        font-family:'Times New Roman', Times, serif;    
+    }
+    
+
+
+
     .main h1 {
         font-size: 20px;
     }
